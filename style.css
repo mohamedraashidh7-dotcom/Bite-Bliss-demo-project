@@ -1,0 +1,798 @@
+*{
+    font-family: Inter, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+/*Nav bar*/
+.links{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.navbar h1{
+     color: #efa81f;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+     box-shadow: 10px 10px 5px #71cb4a;
+     background-color: black;
+     position: sticky;
+     top: 0;
+     
+}
+.navbar-links{
+    display: flex;
+    list-style-type: none;
+    column-gap: 10px;
+}
+.navbar-links a{
+    text-decoration: none;
+    color:white;
+}
+.navbar-links a:hover{
+    text-decoration: underline;
+    color: white;
+}
+.navbar-menu-toggle{
+    display: none;
+}
+
+
+
+
+/*Side navbar*/
+
+
+.side-navbar{
+    width: 50%;
+    height: 100%;
+    background-color: #71cb4a;
+    position: fixed;
+    top: 0%;
+    color: aliceblue;
+    padding: 20px;
+   transition: 2s;
+   left: -60%;
+   z-index: 2;
+   
+}
+
+.side-navbar-links a{
+     
+     text-decoration: none;
+     color: white;
+     display: block;
+
+}
+.side-navbar-link{
+     margin-bottom: 30px;
+
+}
+.side-navbar-links a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/* Header */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 10%;
+    min-height: 90vh;
+    gap: 60px;
+}
+
+.header-text{
+    flex: 1;
+}
+
+.header-text h1{
+    color: #efa81f;
+    font-size: 70px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.header-text p{
+    color: white;
+    font-size: 22px;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+.header-image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.header-image img{
+    width: 320px;
+    height: 420px;
+    object-fit: cover;
+    border: solid 13px #71cb4a;
+    border-radius: 10px;
+}
+
+.header-btn{
+    display: inline-block;
+    padding: 14px 45px;
+    border-radius: 40px;
+    background: linear-gradient(to right,#00c853,#8bc34a);
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    
+    
+}
+.btn-menu{
+    border-radius: 40px;
+    
+}
+.menu-button{
+    margin-left: 400px;
+    margin-bottom: 100px;
+}
+
+
+
+/*Customer review*/
+
+.cusrev-headings{
+    margin-left: 15%;
+}
+
+/* Review Section */
+
+.reviews-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 80px 8%;
+    background-color: black;
+}
+
+/* Cards */
+
+.review-card{
+    width: 320px;
+    min-height: 320px;
+    background: linear-gradient(to right, #08a9d6, #7ed957);
+    border-radius: 35px;
+    padding: 40px 30px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    transition: 0.3s;
+}
+
+.review-card:hover{
+    transform: translateY(-10px);
+}
+
+/* Stars */
+
+.stars{
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+/* Review Text */
+
+.review-card p{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    color: black;
+}
+
+/* Name */
+
+.review-card h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+}
+
+
+/*Details section*/
+
+
+
+
+.details h2{
+    color: #efa81f;
+    margin-left: 15px;
+    padding-top: 10px;
+}
+.details p{
+    color: aliceblue;
+    margin-left: 15px;
+}
+.details{
+    background-color: #3c6629;
+    width: 100%;
+    height: 150px;
+}
+
+.icons-section{
+     
+    margin-left: 15px; 
+    padding-top: 7px;
+
+}
+.details h5{
+     
+       margin-left: 15px;
+       color: aliceblue;
+
+}
+
+
+/*Menu section*/
+
+
+/*Menufood 1*/
+.menu-food-1 img{
+ 
+         width: 320px;
+    height: 420px;
+    object-fit: cover;
+    border: solid 13px #71cb4a;
+    border-radius: 10px;
+   margin: 40px;
+   margin-right: 5px;
+
+}
+.menu-food-1 h1{
+    color: #efa81f;
+    display: flex;
+     line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.menu-food-1 h3{
+
+    color: aliceblue;
+     line-height: 1.6;
+    max-width: 600px;
+
+}
+.menu-food-1{
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    min-height: 40vh;
+    gap: 60px;
+}
+
+/*Menu food 2*/
+
+
+.menu-food-2 img{
+ 
+         width: 320px;
+    height: 420px;
+    object-fit: cover;
+    border: solid 13px #71cb4a;
+    border-radius: 10px;
+   margin: 40px;
+   margin-right: 5px;
+
+}
+.menu-food-2 h1{
+    color: #efa81f;
+    display: flex;
+     line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.menu-food-2 h3{
+
+    color: aliceblue;
+     line-height: 1.6;
+    max-width: 600px;
+
+}
+.menu-food-2{
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    min-height: 40vh;
+    gap: 60px;
+}
+
+/* Food 3*/
+
+.menu-food-3 img{
+ 
+         width: 320px;
+    height: 420px;
+    object-fit: cover;
+    border: solid 13px #71cb4a;
+    border-radius: 10px;
+   margin: 40px;
+   margin-right: 5px;
+
+}
+.menu-food-3 h1{
+    color: #efa81f;
+    display: flex;
+     line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.menu-food-3 h3{
+
+    color: aliceblue;
+     line-height: 1.6;
+    max-width: 600px;
+
+}
+.menu-food-3{
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    min-height: 40vh;
+    gap: 60px;
+}
+
+/*Food 4*/
+
+.menu-food-4 img{
+ 
+         width: 320px;
+    height: 420px;
+    object-fit: cover;
+    border: solid 13px #71cb4a;
+    border-radius: 10px;
+   margin: 40px;
+   margin-right: 5px;
+
+}
+.menu-food-4 h1{
+    color: #efa81f;
+    display: flex;
+     line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.menu-food-4 h3{
+
+    color: aliceblue;
+     line-height: 1.6;
+    max-width: 600px;
+
+}
+.menu-food-4{
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    min-height: 40vh;
+    gap: 60px;
+}
+
+/*Food 5*/
+
+.menu-food-5 img{
+ 
+         width: 320px;
+    height: 420px;
+    object-fit: cover;
+    border: solid 13px #71cb4a;
+    border-radius: 10px;
+   margin: 40px;
+   margin-right: 5px;
+
+}
+.menu-food-5 h1{
+    color: #efa81f;
+    display: flex;
+     line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.menu-food-5 h3{
+
+    color: aliceblue;
+     line-height: 1.6;
+    max-width: 600px;
+
+}
+.menu-food-5{
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    min-height: 40vh;
+    gap: 60px;
+}
+
+/*Food 6 */
+
+.menu-food-6 img{
+ 
+         width: 320px;
+    height: 420px;
+    object-fit: cover;
+    border: solid 13px #71cb4a;
+    border-radius: 10px;
+   margin: 40px;
+   margin-right: 5px;
+
+}
+.menu-food-6 h1{
+    color: #efa81f;
+    display: flex;
+     line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.menu-food-6 h3{
+
+    color: aliceblue;
+     line-height: 1.6;
+    max-width: 600px;
+
+}
+.menu-food-6{
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    min-height: 40vh;
+    gap: 60px;
+}
+
+
+
+/*About us page style*/
+
+
+
+.about-us{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 10%;
+    min-height: 90vh;
+    gap: 60px;
+}
+
+.about-us-text{
+    flex: 1;
+}
+
+.about-us-text h1{
+    color: #efa81f;
+    font-size: 70px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.about-us-text p{
+    color: white;
+    font-size: 22px;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+.about-us-image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-us-image img{
+    width: 320px;
+    height: 420px;
+    object-fit: cover;
+    border: solid 13px #71cb4a;
+    border-radius: 10px;
+}
+
+.learn-more-btn{
+    display: inline-block;
+    padding: 14px 45px;
+    border-radius: 40px;
+    background: linear-gradient(to right,#00c853,#8bc34a);
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    
+    
+}
+.btn-learn-more{
+    border-radius: 40px;
+    
+}
+.learn-more-button{
+    margin-left: 400px;
+    margin-bottom: 100px;
+}
+
+
+
+     /*Contact Us page*/
+
+
+
+.contact-headings{
+    margin-left: 15%;
+    margin-top: 10%;
+}
+
+/* Review Section */
+
+.contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 80px 8%;
+    background-color: black;
+}
+
+/* Cards */
+
+.contact-card{
+    width: 320px;
+    min-height: 320px;
+    background: linear-gradient(to right, #08a9d6, #7ed957);
+    border-radius: 35px;
+    padding: 40px 30px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    transition: 0.3s;
+}
+
+.contact-card:hover{
+    transform: translateY(-10px);
+}
+
+
+/* Review Text */
+
+.contact-card p{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    color: black;
+    justify-content: center;
+}
+
+.contact-card-name{
+    width: 300px;
+    height: 20px;
+    margin: 10px;
+}
+.contact-card-email{
+
+    width: 300px;
+    height: 20px;
+    margin: 10px;
+}
+.contact-card-phone{
+
+    width: 300px;
+    height: 20px;
+    margin: 10px;
+}
+
+.question-box input{
+    width: 300px;
+    height: 100px;
+    margin: 10px;
+}
+
+.contact-btn{
+
+     display: inline-block;
+    padding: 7px 20px;
+    border-radius: 40px;
+    background: linear-gradient(to right,#085729,#507428);
+    color: black;
+    text-decoration: none;
+    
+    
+}
+
+/* Name */
+
+.contact-card h2{
+    color: rgb(2, 58, 21);
+    font-weight: 700;
+   
+}
+
+
+
+
+
+    /* Mobile Responsive */
+
+
+
+
+
+
+@media screen and (max-width:600px){
+
+    /* Navbar */
+
+    .navbar-links{
+        display: none;
+    }
+
+    .navbar-menu-toggle{
+        display: block;
+        color: white;
+        font-size: 22px;
+    }
+
+    /* Header */
+
+    .header{
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 5%;
+    }
+
+    .header-image{
+        order: -1;
+    }
+
+    .header-image img{
+        width: 260px;
+        height: 330px;
+    }
+
+    .header-text h1{
+        font-size: 42px;
+    }
+
+    .header-text p{
+        font-size: 18px;
+    }
+    .menu-button{
+      display: flex;
+        justify-content: center;
+         margin: auto;
+    }
+    
+    
+    
+
+    /* Reviews */
+
+    .cusrev-headings{
+
+      margin-top: 10px;
+
+    }
+    .review-card{
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .review-card p{
+        font-size: 18px;
+    }
+
+    /* Menu Foods */
+
+    .menu-food-1,
+    .menu-food-2,
+    .menu-food-3,
+    .menu-food-4,
+    .menu-food-5,
+    .menu-food-6{
+
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 5%;
+    }
+
+    /* Image top */
+
+    .menu-food-1 img,
+    .menu-food-2 img,
+    .menu-food-3 img,
+    .menu-food-4 img,
+    .menu-food-5 img,
+    .menu-food-6 img{
+
+        order: -1;
+        width: 250px;
+        height: 320px;
+        margin: 0;
+        margin-bottom: 25px;
+    }
+
+    /* Text */
+
+    .menu-food-1 h1,
+    .menu-food-2 h1,
+    .menu-food-3 h1,
+    .menu-food-4 h1,
+    .menu-food-5 h1,
+    .menu-food-6 h1{
+
+        justify-content: center;
+        font-size: 35px;
+    }
+
+    .menu-food-1 h3,
+    .menu-food-2 h3,
+    .menu-food-3 h3,
+    .menu-food-4 h3,
+    .menu-food-5 h3,
+    .menu-food-6 h3{
+
+        font-size: 18px;
+    }
+
+
+  /*About us page*/
+
+  .about-us{
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 5%;
+    }
+
+    .about-us-image{
+        order: -1;
+    }
+
+    .about-us-image img{
+        width: 260px;
+        height: 330px;
+    }
+
+    .about-us-text h1{
+        font-size: 42px;
+    }
+
+    .abut-us-text p{
+        font-size: 18px;
+    }
+    .learn-more-button{
+         display: flex;
+        justify-content: center;
+         margin: auto;
+    }
+    .details{
+        margin-top: 10px;
+    }
+
+}
